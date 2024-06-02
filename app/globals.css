@@ -1,0 +1,381 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./Assets/flowerBG4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.pageBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./Assets/batmanBG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bookBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./Assets/BookBG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.homeButton {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 12em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 35px;
+  z-index: 1;
+
+  /* Hover animation */
+  transition: background 0.3s ease;
+}
+
+.homeButton:hover {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  animation: ani 8s linear infinite;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.homeButton:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+.homeButton:hover::before {
+  filter: blur(20px);
+}
+
+.homeButton:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in:hover {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: 'KR-Birthday-Letters';
+  src: url('/fonts/KR Birthday Letters.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.backButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.backButton span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #0c66ed;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+.backButton span:nth-child(6) {
+  position: relative;
+}
+
+.backButton span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.backButton span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.backButton span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+.backButton span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.backButton span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+.backButton:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+
+.pageButton {
+  border: none;
+  position: relative;
+  width: 800px;
+  height: 292px;
+  padding: 0;
+  z-index: 2;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  -webkit-mask-size: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(8px)
+ }
+ 
+ .pageButton:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0 0 0 white;
+  transition: all 2s ease;
+ }
+ 
+ .pageButton:hover:after {
+  box-shadow: 0px -13px 56px 12px #ffffffa6;
+ }
+ 
+ .pageButton span {
+  position: absolute;
+  width: 100%;
+  font-size: 100px;
+  font-weight: bold;
+  left: 50%;
+  top: 39%;
+  letter-spacing: 3px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: black;
+  transition: all 2s ease;
+ }
+ 
+ .pageButton:hover span {
+  color: white;
+ }
+ 
+ .pageButton:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+ }
+ 
+ .pageButton:hover:before {
+  width: 100%;
+ }
+ 
+
+ .image-container {
+  position: relative; /* This will be the reference for absolute positioning */
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+}
+
+.image-wrapper {
+  position: absolute;
+}
+
+.image1 {
+  top: 34%;
+  left: 65%;
+  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 100% 95%, 98% 50%, 100% 0%);
+  
+  
+}
+
+.image2 {
+  top: 35%;
+  left: 38%;
+  clip-path: polygon(0% 0%, 1% 50%, 0% 100%, 100% 90%, 95% 50%, 100% 10%);
+
+}
+
+.image3 {
+  top:57%;
+  left:47.75%;
+  clip-path: polygon(0% 85%, 100% 85%, 100% 0%, 0% 0%);
+}
+
+.image4 {
+  top: 17.5%;
+  left: 76.5%;
+  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 100% 95%, 95% 50%, 100% 0%);
+}
+
+.image5 {
+  top: 13%;
+  left: 41%;
+  transform: rotate(5deg);
+  clip-path: polygon(0% 0%, 2% 50%, 0% 100%, 100% 95%, 95% 50%, 100% 5%);
+  
+}
+
+.image6 {
+  top: 43%;
+  left: 3%;
+  clip-path: polygon(0% 0%, 1% 50%, 0% 100%, 100% 90%, 95% 50%, 100% 10%);
+}
+
+.image7 {
+  top: 7%;
+  left: 25%;
+  clip-path: polygon(0% 12%, 3% 30%, 0% 88%, 100% 95%, 97% 30%, 100% 0%);
+}
+
+.image8 {
+  top: 30%;
+  left: 27%;
+  clip-path: polygon(0% 0%, 2% 50%, 0% 100%, 100% 95%, 95% 50%, 100% 5%);
+  
+}
+
+.image9 {
+  top: 10%;
+  left: 66%;
+  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 100% 95%, 98% 50%, 100% 0%);
+  
+}
+
+.happyBirthdayText {
+  top: 80%;
+  left: 20%;
+}
+
+
+
+
+
+.image-wrapper img {
+  max-width: 500px; /* Adjust size as needed */
+  max-height: 500px; /* Adjust size as needed */
+}
+
+@keyframes moveRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+/* Apply animation and transition to component */
+.moveRightComponent {
+  animation: moveRight 8s forwards;
+}
+
+@keyframes fadeInPics {
+  0% { opacity:0; }
+  100% { opactiy:1; }
+}
+
+.fadeInPictures {
+  animation:fadeInPics 6s forwards;
+}
+
+@keyframes fadeInBG {
+  0% { opacity:0; }
+  100% { opactiy:1; }
+}
+
+.fadeInBG {
+  animation:fadeInPics 4s forwards;
+}
