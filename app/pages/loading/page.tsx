@@ -8,7 +8,7 @@ import AnimatedText from '@/app/Components/AnimatedText';
 const LoadingPage = () => {
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
-      window.location.href = "birthdayDeploy/pages/happy-birthday"; // Replace with your desired URL
+      window.location.href = "/pages/happy-birthday"; // Replace with your desired URL
     }, 4000); // Replace 7000 with the desired delay in milliseconds
 
     return () => clearTimeout(redirectTimeout); // Clean up the timeout when the component unmounts

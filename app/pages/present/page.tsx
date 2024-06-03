@@ -73,25 +73,26 @@ const Present = () => {
           <Image
           src={penguinPresent}
           width={250}
+          className='rounded-lg opacity-90 hover:opacity-100'
 
           alt=''
         />
         <Image
           src={Bella13}
           width={250}
-
+          className='rounded-lg opacity-90 hover:opacity-100'
           alt=''
         />
         <Image
           src={Bella14}
           width={250}
-
+          className='rounded-lg opacity-90 hover:opacity-100'
           alt=''
         />
         <Image
           src={Bella15}
           width={250}
-
+          className='rounded-lg opacity-90 hover:opacity-100'
           alt=''
         />
 

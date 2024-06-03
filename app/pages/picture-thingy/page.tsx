@@ -126,7 +126,7 @@ const BookGallery = () => {
                />
             </div>
 
-            <div className="image-wrapper image12">
+            <div className="image-wrapper image12 ">
                <Image
                   src={Bella11}
                   className="rounded-l opacity-85 hover:opacity-100"
