@@ -14,10 +14,6 @@ import Bella9 from '../../Assets/Bella9.jpg'
 import Bella10 from '../../Assets/Bella10.jpg'
 import Bella11 from '../../Assets/Bella11.jpg'
 import Bella12 from '../../Assets/Bella12.jpg'
-import Bella13 from '../../Assets/Bella13.jpg'
-import Bella14 from '../../Assets/Bella14.jpg'
-import Bella15 from '../../Assets/Bella15.jpg'
-
 
 const BookGallery = () => {
   return (
