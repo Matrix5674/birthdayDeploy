@@ -11,6 +11,7 @@ import useCountdown from "./Hooks/useCountdown";
 
 export default function Home() {
   return (
+    
     <main data-theme={Theme} className="flex flex-col justify-center items-center h-screen pageBackground">
       <Link href="/pages/loading">
         <button className= "pageButton" >
