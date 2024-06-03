@@ -10,8 +10,13 @@ import Bella5 from '../../Assets/Bella5.jpg'
 import Bella6 from '../../Assets/Bella1.jpg'
 import Bella7 from '../../Assets/Bella7.jpg'
 import Bella8 from '../../Assets/Bella8.jpg'
-
-
+import Bella9 from '../../Assets/Bella9.jpg'
+import Bella10 from '../../Assets/Bella10.jpg'
+import Bella11 from '../../Assets/Bella11.jpg'
+import Bella12 from '../../Assets/Bella12.jpg'
+import Bella13 from '../../Assets/Bella13.jpg'
+import Bella14 from '../../Assets/Bella14.jpg'
+import Bella15 from '../../Assets/Bella15.jpg'
 
 
 const BookGallery = () => {
@@ -20,8 +25,8 @@ const BookGallery = () => {
         <div className='image-container fadeInComponents'>
 
             <div>
-               <p className='text-xl text-white font-bold mt-4 ml-4 fadeInComponents'>You wouldn't let me post so...</p>
-               <p className='text-xl text-white font-bold mt-4 ml-4 fadeInComponents'>Gallery -&gt; -&gt;</p>
+               <p className='text-xl text-white font-bold mt-4 ml-4'>You wouldn't let me post so...</p>
+               <p className='text-xl text-white font-bold mt-4 ml-4'>Gallery -&gt; -&gt;</p>
             </div>
          
             <div className="image-wrapper image1">
@@ -93,6 +98,44 @@ const BookGallery = () => {
                   className="rounded-l opacity-85 hover:opacity-100"
                   width={100}
                   height={200}
+                  alt="" 
+               />
+            </div>
+
+            <div className="image-wrapper image9">
+               <Image
+                  src={Bella9}
+                  className="rounded-l opacity-85 hover:opacity-100"
+                  width={100}
+                  height={200}
+                  alt="" 
+               />
+            </div>
+            <div className="image-wrapper image10">
+               <Image
+                  src={Bella12}
+                  className="rounded-l opacity-85 hover:opacity-100"
+                  width={100}
+                  height={200}
+                  alt="" 
+               />
+            </div>
+            <div className="image-wrapper image11">
+               <Image
+                  src={Bella10}
+                  className="rounded-l opacity-85 hover:opacity-100"
+                  width={100}
+                  height={200}
+                  alt="" 
+               />
+            </div>
+
+            <div className="image-wrapper image12">
+               <Image
+                  src={Bella11}
+                  className="rounded-l opacity-85 hover:opacity-100"
+                  width={175}
+                  height={350}
                   alt="" 
                />
             </div>

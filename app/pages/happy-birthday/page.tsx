@@ -13,7 +13,7 @@ export default function HappyBirthday() {
     <main data-theme={Theme} className="flex flex-col justify-center items-center h-screen background">
         <div className="flex flex-col justify-center bg-cyan-100 rounded-3xl hover:scale-110 hover:bg-blue-200 transition-all p-8 items-center">
         <AnimatedText className=" xl:text-8xl text-2xl md:text-4xl lg:text-6xl font-bold text-primary text-center align-middle " once text="Happy Birthday" speed={0.1} />
-        <AnimatedText className="xl:text-6xl sm:text-sm md:text-lg lg:text-xl  font-bold text-secondary text-center align-middle mt-4" once text="Bella" speed={0.1} />
+        <AnimatedText className="xl:text-6xl sm:text-xl md:text-3xl lg:text-5xl  font-bold text-secondary text-center align-middle mt-4" once text="Annabella Nutella" speed={0.1} />
         <Link href="/pages/present">
           <motion.button animate={{opacity:0.75}} transition={{duration:4}} className="homeButton mt-6 opacity-0 hover:opacity-100">Surprise!</motion.button>
         </Link>

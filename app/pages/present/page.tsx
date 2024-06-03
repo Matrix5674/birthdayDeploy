@@ -6,10 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Prezzie1 from '../../Assets/present.jpg'
 import Prezzie2 from '../../Assets/Present2.png'
-import Bella1 from '../../Assets/Bella1.jpg'
-import Bella2 from '../../Assets/Bella2.jpg'
-import Bella3 from '../../Assets/Bella3.jpg'
-import Bella4 from '../../Assets/Bella4.jpg'
+import Bella13 from '../../Assets/Bella13.jpg'
+import Bella14 from '../../Assets/Bella14.jpg'
+import Bella15 from '../../Assets/Bella15.jpg'
 import Bella5 from '../../Assets/Bella5.jpg'
 import PresentStack from '../../Assets/PresentStack.png'
 import blackmail from '../../Assets/BellaBlackmail.jpg'
@@ -70,14 +69,35 @@ const Present = () => {
         </div>
 
         </div>
+        <div className="flex flex-row justify-between mr-5 ml-5 mb-20">
+          <Image
+          src={penguinPresent}
+          width={250}
+
+          alt=''
+        />
+        <Image
+          src={Bella13}
+          width={250}
+
+          alt=''
+        />
+        <Image
+          src={Bella14}
+          width={250}
+
+          alt=''
+        />
+        <Image
+          src={Bella15}
+          width={250}
+
+          alt=''
+        />
+
+        </div>
       
-      <Image
-      src={penguinPresent}
-      width={100}
-      height={200}
-      alt=''
-      />
-      <p className="">^ This is penguin. He's got a gift.</p>
+        
 
 
       

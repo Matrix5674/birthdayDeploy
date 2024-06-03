@@ -332,9 +332,43 @@ body {
 }
 
 .image9 {
-  top: 10%;
-  left: 66%;
-  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 100% 95%, 98% 50%, 100% 0%);
+  top: 6%;
+  left: 66.5%;
+  transform: rotate(-15deg);
+  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 50% 91%, 100% 95%, 98% 50%, 100% 0%);
+  
+}
+
+.image10 {
+  top: 52.5%;
+  left: 73%;
+  clip-path: polygon(0% 12%, 5% 50%, 0% 88%, 100% 95%, 98% 50%, 100% 0%);
+  
+}
+.image11 {
+  top: 25%;
+  left: 19%;
+  clip-path: polygon(0% 13%, 5% 50%, 0% 87%, 100% 100%, 95% 50%, 100% 0%);
+  
+}
+.image12 {
+  top: 35%;
+  left: 85%;
+  clip-path: polygon(0% 13%, 5% 50%, 0% 87%, 100% 100%, 95% 50%, 100% 0%);
+  
+}
+.image13 {
+  top: 6%;
+  left: 66.5%;
+  transform: rotate(-15deg);
+  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 50% 91%, 100% 95%, 98% 50%, 100% 0%);
+  
+}
+.image14 {
+  top: 6%;
+  left: 66.5%;
+  transform: rotate(-15deg);
+  clip-path: polygon(0% 10%, 5% 50%, 0% 90%, 50% 91%, 100% 95%, 98% 50%, 100% 0%);
   
 }
 
